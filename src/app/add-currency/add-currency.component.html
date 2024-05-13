@@ -1,0 +1,10 @@
+
+<div>
+    <div class="form-group">
+        <select class="form-control" [(ngModel)]="selectedCurrency">
+            <option value="" disabled selected>Select Currency</option>
+            <option *ngFor="let currency of currenciesToAdd" [value]="currency">{{ currency }}</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" (click)="onAddCurrency()">Add</button>
+</div>
