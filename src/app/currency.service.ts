@@ -8,7 +8,7 @@ import { catchError, map } from 'rxjs/operators';
 })
 export class CurrencyService {
   private _apiUrl = 'https://api.apilayer.com/currency_data/live';
-  private _apiKey = '3Yw2QT0GSH5mIbcl4OZ6rG3znc5Il6dV';
+  private _apiKey = 'AoeH0HcPj2kZqeJXW9ajNoAFYvF2NH16';
   trackedCurrenciesSubject = new BehaviorSubject<string[]>(['USD', 'EUR', 'GBP', 'BYN',]);
   trackedCurrencies$: Observable<string[]> = this.trackedCurrenciesSubject.asObservable();
 
